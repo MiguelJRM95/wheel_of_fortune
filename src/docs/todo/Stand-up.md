@@ -11,4 +11,4 @@
 
 > d. 13/11/2021 - 4 hours. 
 >- TODO: *Business plan, folder structure and general architecture, server and home* 
->- Summary:
+>- Summary: *All done, home main still to do*
