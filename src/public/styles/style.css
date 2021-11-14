@@ -1,7 +1,7 @@
 :root{
     --header-h: 9vh;
     --nav-h: 5.5vh;
-    --footer-h: 5vh;
+    --footer-h: 7vh;
     --main-h: calc(100vh - var(--header-h) - var(--nav-h) - var(--footer-h));
 }
 
@@ -18,13 +18,21 @@ nav{
     width: 100%;
 }
 
-main{
+.main{
+    display: flex;
+    align-items: center;
     height: var(--main-h);
-    background: url("https://source.unsplash.com/random");
+    background: url("https://source.unsplash.com/collection/209138");
     opacity: 0.6;
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-size: cover;
+}
+
+.quote-canvas{
+    height: 65%;
+    width: 100%;
+    background-color: rgba(15, 15, 15, 0.642);
 }
 
 footer{
@@ -35,5 +43,9 @@ footer{
     height: var(--footer-h);
 }
 
+i{
+    color: black;
+    font-size: 1.5rem;
+}
 
 
