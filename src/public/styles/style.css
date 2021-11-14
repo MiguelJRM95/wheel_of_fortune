@@ -1,18 +1,38 @@
+:root{
+    --header-h: 9vh;
+    --nav-h: 5.5vh;
+    --footer-h: 5vh;
+    --main-h: calc(100vh - var(--header-h) - var(--nav-h) - var(--footer-h));
+}
+
 .padding-l-r{
     padding: 0 10vw;
 }
 
+header{
+    height: var(--header-h);
+}
+
 nav{
+    height: var(--nav-h);
     width: 100%;
 }
 
+main{
+    height: var(--main-h);
+    background: url("https://source.unsplash.com/random");
+    opacity: 0.6;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+}
 
 footer{
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 5vh;
+    height: var(--footer-h);
 }
 
 
