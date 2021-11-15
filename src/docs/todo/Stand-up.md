@@ -19,4 +19,4 @@
 
 > d. 15/11/2021 - 4 hours. 
 >- TODO: *Implement faunadb to fetch a quote to display in home/quote page* 
->- Summary: **
+>- Summary: *FaunaDB implementation done, made a simple get request to DB through /quotes, random quote done*
