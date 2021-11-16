@@ -1,0 +1,6 @@
+Title: Win page
+As a: Final User
+I want: Have the chance to win a price(free coaching session, books...) and be able to choose one of
+        the prizes among some options.
+So that: I get rewards for not only using the app, but for to grow as a person with the help of this 
+        application.
