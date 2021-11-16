@@ -20,3 +20,11 @@
 > d. 15/11/2021 - 4 hours. 
 >- TODO: *Implement faunadb to fetch a quote to display in home/quote page* 
 >- Summary: *FaunaDB implementation done, made a simple get request to DB through /quotes, random quote done*
+
+---
+
+3. Day 3:
+
+> d. 16/11/2021 - 2 hours. 
+>- TODO: *Implement the front-end of the wheel of fortune* 
+>- Summary: **
