@@ -1,1 +1,5 @@
-home page
+Title: Home page
+As a: Final User
+I want: Read some quote that makes me think about me or my life,
+        getting each time I go to this site a different quote.
+So that: I have something stimulating, which make me think ways to develop as a person.
