@@ -17,7 +17,9 @@ main{
     grid-column: 1;
 	margin:0;
 	padding:0;
-	background-color: #34495e;
+	background: #2980B9;  
+    background: -webkit-linear-gradient(to left, #FFFFFF, #6DD5FA, #2980B9);  
+    background: linear-gradient(to left, #FFFFFF, #6DD5FA, #2980B9); 
 	display:flex;
 	align-items:center;
 	justify-content: center;
@@ -29,9 +31,9 @@ main{
 .wheel-container{
 	width:27em;
 	height:27em;
-	background-color: #ccc;
+	background-color: rgb(189, 188, 188);
 	border-radius:50%;
-	border:15px solid #dde;
+	border:15px solid rgb(194, 194, 209);
 	position: relative;
 	overflow: hidden;
 	transition: 5s;
@@ -53,6 +55,16 @@ main{
 	font-family:sans-serif;
 	color:#fff;
 	left:5em;
+}
+
+.wheel-text{
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    font-size: medium;
 }
 
 .wheel-container .one{
