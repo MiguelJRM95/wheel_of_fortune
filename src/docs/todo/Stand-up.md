@@ -27,4 +27,4 @@
 
 > d. 16/11/2021 - 2 hours. 
 >- TODO: *Implement the front-end of the wheel of fortune* 
->- Summary: **
+>- Summary: *Wheel front-end implemented, still to do prize choose, last three prizes won(local storage), prize win funcionality*
