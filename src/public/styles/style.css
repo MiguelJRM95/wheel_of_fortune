@@ -1,6 +1,6 @@
 :root{
     --header-h: 9vh;
-    --nav-h: 5.5vh;
+    --nav-h: 80px;
     --footer-h: 7vh;
     --main-h: calc(100vh - var(--header-h) - var(--nav-h) - var(--footer-h));
 }
@@ -14,7 +14,7 @@ header{
 }
 
 nav{
-    height: var(--nav-h);
+    max-height: var(--nav-h);
     width: 100%;
 }
 
