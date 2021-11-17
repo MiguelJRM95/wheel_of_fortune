@@ -49,15 +49,31 @@
                 <div class="eight"><p class="wheel-text">Lucky prize</p></div>
             </div>
         </div>
-        <div>
+        <div class="prize-info">
+            <h3 class="prize-title">Please choose a prize before spin the wheel!</h3>
+            <span class="warn"></span>
             <div class="prize-select">
-                <div></div>
-                <div></div>
-                <div></div>
+                <div class="prize btn btn-success">500$ for coach sessions</div>
+                <div class="prize btn btn-success">Personal coaching for life</div>
+                <div class="prize btn btn-success">Career coaching for life</div>
             </div>
             <div class="last-prizes">
-
+                <button id="clear-prizes" class="btn btn-danger">Clear Prizes</button>
+                <table class="table table-hover table-striped">
+                    <caption class="caption-top">Last Prizes</caption>
+                    <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">Prize Choosen</th>
+                          <th scope="col">Prize Won</th>
+                          <th scope="col">Lucky Winner</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-body">
+                    </tbody>
+                </table>
             </div>
+            <p id="winner"></p>
         </div>
     </main>
     <footer class="d-flex justify-content-around bg-light align-items-center">
@@ -70,9 +86,11 @@
             <a href="#"><i class="fab fa-linkedin"></i></a>
         </div>
     </footer>
+    <script src="./js/prize_choose.js"></script>
     <script src="./js/wheel-pop-up.js"></script>
     <script src="./js/buttons_nav.js"></script>
     <script src="./js/wheel-spin.js"></script>
+    <script src="./js/table_control.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>

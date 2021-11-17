@@ -9,7 +9,7 @@ main{
     width: 100%;
     height: var(--main-h);
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     grid-template-rows:  1fr;
 }
 
@@ -24,7 +24,7 @@ main{
 	align-items:center;
 	justify-content: center;
 	height:100%;
-    width: 70%;
+    width: 40vw;
 	overflow:hidden;
 }
 
@@ -67,59 +67,63 @@ main{
     font-size: medium;
 }
 
+.wheel-text-small{
+	transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    font-size: smaller;
+	max-width: 75%;
+}
+
 .wheel-container .one{
 	background-color: #3f51b5;
 	left:50%;
 }
+
 .wheel-container .two{
 	background-color: #ff9800;
 	transform: rotate(45deg);
 }
+
 .wheel-container .three{
 	background-color: #e91e63;
 	transform:rotate(90deg);
 }
+
 .wheel-container .four{
 	background-color: #4caf50;
 	transform: rotate(135deg);
 }
+
 .wheel-container .five{
 	background-color: #009688;
 	transform: rotate(180deg);
 }
+
 .wheel-container .six{
 	background-color: #795548;
 	transform: rotate(225deg);
 }
+
 .wheel-container .seven{
 	background-color: #9c27b0;
 	transform: rotate(270deg);
 }
+
 .wheel-container .eight{
 	background-color: #f44336;
 	transform: rotate(315deg);
 }
 
-/* .arrow{
-	position: absolute;
-	top:13vh;
-	left:28vw;
-	transform: translateX(-50%);
-	color:#000000;
-    z-index: 2;
-}
-
-.arrow::before{
-	content:"\1F817";
-	font-size:10ch;
-}
-*/
 #spin {
 	width: 68px;
     height: 68px;
     position: absolute;
     top: 53.7vh;
-    left: 27.8vw;
+    left: 19.8vw;
     margin: -34px 0 0 -34px;
     border-radius: 50%;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 0px;
@@ -127,8 +131,9 @@ main{
     background: #fff;
     cursor: pointer;
     user-select: none;
-  }
-  #spin:after {
+}
+
+#spin:after {
 	content: 'SPIN';
 	text-align: center;
 	line-height: 68px;
@@ -139,8 +144,9 @@ main{
 	width: 68px;
 	height: 68px;
 	display: block;
-  }
-  #spin:before {
+}
+
+#spin:before {
 	content: '';
 	position: absolute;
 	width: 0;
@@ -150,8 +156,9 @@ main{
 	border-color: transparent transparent #fff transparent;
 	top: -12px;
 	left: 14px;
-  }
-  #inner-spin {
+}
+
+#inner-spin {
 	width: 54px;
 	height: 54px;
 	position: absolute;
@@ -163,27 +170,13 @@ main{
 	box-shadow: rgba(255, 255, 255, 1) 0px -2px 0px inset, rgba(255, 255, 255, 1) 0px 2px 0px inset, rgba(0, 0, 0, 0.4) 0px 0px 5px;
 	background: radial-gradient(ellipse at center, rgba(255, 255, 255, 1) 0% , rgba(234, 234, 234, 1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr = '#ffffff', endColorstr='#eaeaea', GradientType=1);
-  }
-  #spin:active #inner-spin {
-	box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 5px inset;
-  }
-  #spin:active:after {
-	font-size: 15px;
-  }
-
-
-/* #spin {
-    width: 68px;
-    height: 68px;
-    position: absolute;
-    top: 53.5vh;
-    left: 27.8vw;
-    margin: -34px 0 0 -34px;
-    border-radius: 50%;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 0px;
-    z-index: 1;
-    background: #fff;
-    cursor: pointer;
-    user-select: none;
 }
-*/
+
+#spin:active #inner-spin {
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 5px inset;
+}
+
+#spin:active:after {
+	font-size: 15px;
+}
+

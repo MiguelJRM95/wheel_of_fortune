@@ -55,6 +55,50 @@ nav{
     text-align: center;
 }
 
+.prize-info{
+    min-width: 50vw;
+}
+
+.prize-title{
+    margin-top: 2em;
+    text-align: center;
+}
+
+.prize-select{
+    margin: 2em;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+    justify-content: space-between;
+}
+
+.prize-select div:hover{
+    transform: scale(1.4);
+}
+
+.prize-select div:active{
+    transform: scale(0.8);
+}
+
+.prize-info:last-child {
+    margin-right: 4em;
+}
+
+.caption-top{
+    caption-side: top;
+}
+
+#clear-prizes{
+    position: absolute;
+    right: 4em;
+}
+
+#winner{
+    
+    text-align: center;
+    font-weight: bold;
+}
+
 footer{
     position: fixed;
     left: 0;
