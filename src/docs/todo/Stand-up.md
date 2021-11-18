@@ -17,6 +17,22 @@
 
 2. Day 2:
 
-> d. 15/11/2021 - 4 hours. 
+> d. 16/11/2021 - 4 hours. 
 >- TODO: *Implement faunadb to fetch a quote to display in home/quote page* 
 >- Summary: *FaunaDB implementation done, made a simple get request to DB through /quotes, random quote done*
+
+---
+
+3. Day 3:
+
+> d. 17/11/2021 - 2 hours. 
+>- TODO: *Implement the front-end of the wheel of fortune* 
+>- Summary: *Wheel front-end implemented, still to do prize choose, last three prizes won(local storage), prize win funcionality*
+
+---
+
+3. Day 4:
+
+> d. 18/11/2021 - 5 hours. 
+>- TODO: *Implement local storage and table of last prizes won, wheel of fortune prize funcionality* 
+>- Summary: *prize win funcionality implemented, prizes choose by user done, table of last prizes with local storage done*
