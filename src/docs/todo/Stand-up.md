@@ -5,7 +5,7 @@
 ##### In this document you will see the diferent todo's
 ##### as well what that day it's been achieved and what problems have been appeared
 
-**Please, in case you continue with the project please write down the todo and info of that session**
+**Please, in case you continue with the project write down the todo and info of that session**
 
 1. Day 1:
 
@@ -31,8 +31,17 @@
 
 ---
 
-3. Day 4:
+4. Day 4:
 
 > d. 18/11/2021 - 5 hours. 
 >- TODO: *Implement local storage and table of last prizes won, wheel of fortune prize funcionality* 
 >- Summary: *prize win funcionality implemented, prizes choose by user done, table of last prizes with local storage done*
+
+---
+
+5. Day 5:
+
+> d. 19/11/2021 - 4 hours. 
+>- TODO: *Design About us page, with some people expirience with the service and the vision of the company* 
+>- Summary: *Design done, not so happy with the result, problems aligning elements with flexbox, some trouble with a margin or padding
+                that I don't know where it comes from*
