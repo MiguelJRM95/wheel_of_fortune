@@ -2,7 +2,7 @@
     --header-h: 9vh;
     --nav-h: 80px;
     --footer-h: 7vh;
-    --main-h: calc(100vh - var(--header-h) - var(--nav-h) - var(--footer-h));
+    --main-h: 86.78461vh;
 }
 
 .padding-l-r{
@@ -120,4 +120,91 @@ i:active{
     text-shadow: 2px 1px black;
 }
 
+svg{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient( 132.6deg,  rgba(71,139,214,1) 23.3%, rgba(37,216,211,1) 84.7% );
+    fill: #fff;
+    z-index: -1;
+}
 
+.container{
+    margin-top: 5em;
+    display: grid;
+    grid-template-columns: 2fr 1fr;   
+}
+
+.vision{
+    align-self: center;
+    height: 400px;
+    background:hsl(0, 0%, 10%);
+    color:hsl(0, 0%, 50%);
+    padding:2rem 3rem;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    background-image:linear-gradient(90deg, hsl(0, 0%, 10%), hsla(0, 0%, 10%, 0.9),   hsla(0, 0%, 10%, 0)), url("https://images.unsplash.com/photo-1636950101519-a128cad64a4b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2071&q=80");
+    background-size:cover;
+    border-radius:10px;
+    -webkit-box-shadow: 14px 14px 14px -9px rgba(125,118,125,0.67);
+    -moz-box-shadow: 14px 14px 14px -9px rgba(125,118,125,0.67);
+    box-shadow: 14px 14px 14px -9px rgba(125,118,125,0.67);
+}
+
+.vision > p{
+    color: #fff;
+    margin-bottom:2rem;
+    width:75%;
+    font-size:1.2rem;
+    letter-spacing:1px;
+    line-height:150%;
+}
+
+.people{
+    display: grid;
+}
+
+.people-card{
+    width: 25vw;
+    height: 120px;
+    background-color: #fff;
+    border-radius: 10px;
+    -webkit-box-shadow: 14px 14px 14px -9px rgba(125,118,125,0.67);
+    -moz-box-shadow: 14px 14px 14px -9px rgba(125,118,125,0.67);
+    box-shadow: 14px 14px 14px -9px rgba(125,118,125,0.67);
+}
+
+.people-card p{
+    line-height: normal;
+    padding-top: 1em;
+}
+
+.img-1{
+    background: url("https://source.unsplash.com/collection/1116190/120x120");
+    width: 120px;
+    height: 120px;
+    border-radius: 10px 0 0 10px;
+    float: left;
+    margin-right: 0.5em;
+}
+
+.img-2{
+    background: url("https://source.unsplash.com/collection/10604986/120x120");
+    width: 120px;
+    height: 120px;
+    border-radius: 10px 0 0 10px;
+    float: left;
+    margin-right: 0.5em;
+}
+
+.img-3{
+    background: url("https://source.unsplash.com/collection/fR0fpuI7fzc/120x120");
+    width: 120px;
+    height: 120px;
+    border-radius: 10px 0 0 10px;
+    float: left;
+    margin-right: 0.5em;
+}

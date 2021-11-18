@@ -18,6 +18,10 @@ app.get('/win', function(req, res) {
   res.sendFile(path.join(__dirname, '/public/win.html'));
 });
 
+app.get('/about', function(req, res) {
+  res.sendFile(path.join(__dirname, '/public/about.html'));
+});
+
 
 app.get('/quotes', async (req, res) => {
   try {
