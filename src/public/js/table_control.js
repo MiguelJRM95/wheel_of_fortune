@@ -19,5 +19,6 @@ window.addEventListener('load', ()=>{
 
 clearTable.onclick = ()=>{
     localStorage.clear();
+    winnerCounter = 0;
     tableBody.innerHTML="";
 }

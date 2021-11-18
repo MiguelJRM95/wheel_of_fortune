@@ -4,19 +4,11 @@ let arrow = document.querySelector(".arrow");
 let tableBody = document.querySelector(".table-body");
 let printPrize = document.getElementById("winner");
 let number = Math.ceil(Math.random() * 1000);
-let winnerCounter = 0;
+let winnerCounter = 0 || (localStorage.length);
+
 let elementClass = null;
 let prize = null;
 
-const printWinnerLive = (luckyPrize, prize)=>{
-	let row = document.createElement("tr");
-   	let luckyW = luckyPrize!=prize?`\u274C`:`\u{1F4B0}`;
-    row.innerHTML=`<th scope="row">${winnerCounter}</th>
-                    <td>${luckyPrize}</td>
-                    <td>${prize}</td>
-                    <td>${luckyW}</td>`;
-    tableBody.appendChild(row);
-}
 
 const getPrize = (elementClass) => {
 	switch (elementClass) {
@@ -41,13 +33,23 @@ const getPrize = (elementClass) => {
 
 const saveWinner = (luckyPrize, prize) =>{
 	let luckyWinner = false;
+
 	if(luckyPrize == prize){
 		luckyWinner = true;
 	}
-	if(winnerCounter < 3){
-		winnerCounter++;
-		localStorage.setItem(`winner-${winnerCounter}`, JSON.stringify({luckyPrize, prize, luckyWinner}));
-	}
+
+	localStorage.setItem(`winner-${winnerCounter}`, JSON.stringify({luckyPrize, prize, luckyWinner}));
+}
+
+
+const printWinnerLive = (luckyPrize, prize)=>{
+	let row = document.createElement("tr");
+	let luckyW = luckyPrize!=prize?`\u274C`:`\u{1F4B0}`;
+    row.innerHTML=`<th scope="row">${winnerCounter}</th>
+	<td>${luckyPrize}</td>
+	<td>${prize}</td>
+	<td>${luckyW}</td>`;
+    tableBody.appendChild(row);
 }
 
 
@@ -65,16 +67,21 @@ btn.onclick = function () {
 		warning.innerText = "You must select a prize before spin the wheel";
 		return null;
 	}
-
+	
 	container.style.transform = "rotate(" + number + "deg)";
 	number += Math.ceil(Math.random() * 1000);
 }
 
 container.addEventListener('transitionend', ()=>{
+	winnerCounter++;
 	elementClass = document.elementFromPoint(arrow.getBoundingClientRect().x+30, arrow.getBoundingClientRect().y-20).className;
 	prize = getPrize(elementClass);
-	saveWinner(luckyPrize.childNodes[0].innerText, prize);
-	printWinnerLive(luckyPrize.childNodes[0].innerText, prize);
-	printPrize.innerText= `\u2B50 You have won: ${prize}! \u2B50`;
+	if(winnerCounter < 5){
+		saveWinner(luckyPrize.childNodes[0].innerText, prize);
+		printWinnerLive(luckyPrize.childNodes[0].innerText, prize);
+		printPrize.innerText= `\u2B50 You have won: ${prize}! \u2B50`;
+	}else{
+		printPrize.innerText="You have reached the maximum amount of spins, clear prizes please";
+	}
 })
 
