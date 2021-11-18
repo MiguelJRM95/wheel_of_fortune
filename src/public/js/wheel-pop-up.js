@@ -23,12 +23,24 @@ button.type = "button";
 button.innerText = "Close";
 button.classList = "btn btn-primary";
 button.style.width = "10vw";
+button.style.margin = "3em";
 button.style.alignSelf = "center";
+
+let winExplanation = document.createElement("p");
+winExplanation.style.textAlign = "center";
+winExplanation.style.width = "70%";
+winExplanation.style.margin = "0 auto";
+winExplanation.innerText = `Hi, Visitor! This is our Wheel Of Fortune, you have three free spins,
+                            but remember, you first need to select a prize of your choise, Good Luck!
+
+                            
+                                                                👇`;
 
 
 window.addEventListener('load', () =>{
     document.body.appendChild(backgroundPopUp);
     backgroundPopUp.appendChild(innerDivContent);
+    innerDivContent.appendChild(winExplanation);
     innerDivContent.appendChild(button);
 })
 
