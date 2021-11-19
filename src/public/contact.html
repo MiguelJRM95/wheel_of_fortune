@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,9 +8,8 @@
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/style.css">
     <script src="https://kit.fontawesome.com/b099802a25.js" crossorigin="anonymous"></script>
-    <title>Home - Quotes</title>
+    <title>Contact Us</title>
 </head>
-
 <body>
     <header class="padding-l-r d-flex justify-content-between align-items-center navbar-light bg-light">
         <h1 id="header-name align-self-center">NAME</h1>
@@ -29,16 +27,22 @@
                 <a class="nav-link text-white" id="about" href="/about">About Us</a>
             </li>
             <li class="flex-sm-fill text-sm-center">
-                <a class="nav-link text-white" id="contact" href="/contact">Contact Us</a>
+                <a class="nav-link text-white" id="contact" href="#">Contact Us</a>
             </li>
         </ul>
     </nav>
-    <main class="main">
-        <div class="quote-canvas">
-            <div class="quote-container">
-                <p id="quoteP"></p>
-            </div>
-        </div>
+    <main>
+        <form action="/email" method="post">
+            <label for="name">Name</label>
+            <input type="text"  name="name" placeholder="Type your name...">
+            <label for="email">Email</label>
+            <input type="text" name="email" placeholder="Type your email...">
+            <label for="subject">Subject</label>
+            <input type="text" name="subject" placeholder="Why you contact...">
+            <label for="body">Explain Us</label>
+            <input type="text" name="body">
+            <button type="submit">Enviar</button>
+        </form>
     </main>
     <footer class="d-flex justify-content-around bg-light align-items-center">
         <div>
@@ -50,14 +54,12 @@
             <a href="#"><i class="fab fa-linkedin"></i></a>
         </div>
     </footer>
-    <script type="module" src="./js/random_quotes.js"></script>
     <script src="./js/buttons_nav.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> 
 </body>
-
 </html>

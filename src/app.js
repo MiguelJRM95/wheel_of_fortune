@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path');
-const bodyParser = require("body-parser");
+const nodemailer = require("nodemailer");
 const app = express();
 const port = process.env.PORT || 3000;
 const emailHost = process.env.EMAIL_HOST || "smtp.mailtrap.io";
@@ -42,6 +42,10 @@ app.get('/about', function(req, res) {
   res.sendFile(path.join(__dirname, '/public/about.html'));
 });
 
+app.get('/contact', function(req, res) {
+  res.sendFile(path.join(__dirname, '/public/contact.html'));
+});
+
 
 app.get('/quotes', async (req, res) => {
   try {
@@ -62,16 +66,17 @@ app.post('/email', async (req, res) => {
   try{
     let nameSender = req.body.name;
     let sender = req.body.email;
-    let emailBody = req.body.emailBodyContent;
-    let subject = req.body.sub;
+    let emailBody = req.body.body;
+    let subject = req.body.subject;
 
-    let info = await transporter.sendMail({
+    await transporter.sendMail({
       from: `"${nameSender}" <${sender}>`, 
       to: `${emailAddrs}`, 
-      subject: `${subject}`, 
-      html: `<div>${emailBody}</div>`
+      subject: `${subject}`,
+      text: "Plaintext version of the message", 
+      html: `<p>${emailBody}</p>`
     });
-
+    res.sendFile(path.join(__dirname, '/public/index.html'));
   }catch{
     console.error;
   }
