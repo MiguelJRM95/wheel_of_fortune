@@ -1,0 +1,4 @@
+Title: Contact page
+As a: Final User
+I want: Get in touch with the company to ask for information of the services or any doubt that I have.
+So that: I can hire a service or start a negotiation process with a real person by email.
