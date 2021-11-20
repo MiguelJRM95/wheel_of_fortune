@@ -10,7 +10,17 @@ const textToShow = () => {
             
                                                 👇`;
         case '/':
-            return `Hello World`;
+            return `We are more than a race, or a gender or a number.
+                    We live in a society, in a community, we are not alone.
+
+                    But some times, we need a friend hand that show us our path of which we have lost.
+                    Here is where Newforneurcoach comes, to help people to find her own path, to develop 
+                    as a person, and help with our personal carrers.
+
+                    Now more that ever we can't be lost, sadly our society has become extremly competitive 
+                    and demanding, that we need to be the best version of our selfs.
+
+                                                    We are here to help you so!`;
         default:
             return route;
             break;
@@ -29,9 +39,10 @@ backgroundPopUp.style.zIndex = "99";
 
 let innerDivContent = document.createElement("div");
 innerDivContent.style.width = "70vw";
-innerDivContent.style.height = "50vh";
+innerDivContent.style.height = "fit-content";
 innerDivContent.style.backgroundColor = "#fff";
 innerDivContent.style.margin = "12% auto";
+innerDivContent.style.padding = "2em";
 innerDivContent.style.borderRadius = "25px";
 innerDivContent.style.display = "flex";
 innerDivContent.style.flexDirection = "column";
