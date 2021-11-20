@@ -47,16 +47,18 @@ at a 19inch laptop and at a 24inch monitor
 ## Run the app
 
 In order to run the app in your local machine, you must to install Nodejs at least v16.13.0
-Inside the proyect folder
 
 ````
-cd /src
+git clone https://github.com/MiguelJRM95/wheel_of_fortune
+cd /wheel_of_fortune/src
 node app.js
 ````
 
 or if you want to edit something
 
 ````
+git clone https://github.com/MiguelJRM95/wheel_of_fortune
+cd /wheel_of_fortune/src
 cd /src
 npm run dev
 ````
