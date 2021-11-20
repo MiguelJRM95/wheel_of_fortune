@@ -28,7 +28,10 @@ const textToShow = () => {
 
                                                     We are here to help you so!`;
         default:
-            console.log(route);
+            return `Email succesfuly sended
+                        Congratulations!
+                    We will reach you out soon 
+                            📧`;
             break;
     }
 }
@@ -88,10 +91,12 @@ winExplanation.innerText = textToShow();
  */
 
 window.addEventListener('load', () => {
-    document.body.appendChild(backgroundPopUp);
-    backgroundPopUp.appendChild(innerDivContent);
-    innerDivContent.appendChild(winExplanation);
-    innerDivContent.appendChild(button);
+    if(winExplanation.innerText != null){
+        document.body.appendChild(backgroundPopUp);
+        backgroundPopUp.appendChild(innerDivContent);
+        innerDivContent.appendChild(winExplanation);
+        innerDivContent.appendChild(button);
+    }
 })
 
 /**
