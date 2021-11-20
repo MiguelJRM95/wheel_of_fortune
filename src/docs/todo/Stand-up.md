@@ -45,3 +45,11 @@
 >- TODO: *Design About us page, with some people expirience with the service and the vision of the company* 
 >- Summary: *Design done, not so happy with the result, problems aligning elements with flexbox, some trouble with a margin or padding
                 that I don't know where it comes from*
+
+---
+
+6. Day 6:
+
+> d. 20/11/2021 - 4 hours. 
+>- TODO: *Complete Contact Us layout and style, develop de business case and make de modal in home page* 
+>- Summary: *Contact Us completed, Nodemail and mailtrap used for the backend side, coaching business idea developed, modal done*
