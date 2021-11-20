@@ -29,3 +29,9 @@ Sample live user experience inside the app
 
 > General view
 >> ![image](https://github.com/MiguelJRM95/wheel_of_fortune/blob/master/media/general.gif)
+
+> Contact Form
+>> ![image](https://github.com/MiguelJRM95/wheel_of_fortune/blob/master/media/email.gif)
+
+> Wheel feature
+>> ![image](https://github.com/MiguelJRM95/wheel_of_fortune/blob/master/media/wheel.gif)
