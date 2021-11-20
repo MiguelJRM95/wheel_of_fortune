@@ -28,4 +28,4 @@ This app is form by 4 pages
 Sample live user experience inside the app
 
 > General view
->> ![image](https://github.com/MiguelJRM95/wheel_of_fortune/media/general.gif)
+>> ![image](https://github.com/MiguelJRM95/wheel_of_fortune/blob/master/media/general.gif)
