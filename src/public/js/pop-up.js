@@ -1,3 +1,9 @@
+/**
+ * The function gets the path the user is at and then print a diferent message for each one
+ * In case anyone needs another modal when the window load just add a case in this switch
+ * @returns the text message to shown in the modals used in index.html and win.html
+ */
+
 const textToShow = () => {
     let route = window.location.pathname;
     console.log(route);
@@ -27,7 +33,10 @@ const textToShow = () => {
     }
 }
 
-
+/**
+ * Creation of the background for the modal
+ * style as well
+ */
 let backgroundPopUp = document.createElement("div");
 backgroundPopUp.style.width = "100vw";
 backgroundPopUp.style.height = "100vh";
@@ -36,7 +45,9 @@ backgroundPopUp.style.position = "absolute";
 backgroundPopUp.style.top = "0";
 backgroundPopUp.style.zIndex = "99";
 
-
+/**
+ * Creation of the container of the message and the close button
+ */
 let innerDivContent = document.createElement("div");
 innerDivContent.style.width = "70vw";
 innerDivContent.style.height = "fit-content";
@@ -49,6 +60,9 @@ innerDivContent.style.flexDirection = "column";
 innerDivContent.style.justifyContent = "center";
 innerDivContent.style.alignContent = "center";
 
+/**
+ * Creation of the close button
+ */
 let button = document.createElement("button");
 button.type = "button";
 button.innerText = "Close";
@@ -57,6 +71,10 @@ button.style.width = "10vw";
 button.style.margin = "3em";
 button.style.alignSelf = "center";
 
+
+/**
+ * Paragraph element shown when the window loads
+ */
 let winExplanation = document.createElement("p");
 winExplanation.style.textAlign = "center";
 winExplanation.style.width = "70%";
@@ -64,14 +82,22 @@ winExplanation.style.margin = "0 auto";
 winExplanation.innerText = textToShow();
 
 
-    window.addEventListener('load', () => {
-        document.body.appendChild(backgroundPopUp);
-        backgroundPopUp.appendChild(innerDivContent);
-        innerDivContent.appendChild(winExplanation);
-        innerDivContent.appendChild(button);
-    })
+/**
+ * When the window loads the parent element backgroundPopUp
+ * is append to the body, then all of the child are added
+ */
 
+window.addEventListener('load', () => {
+    document.body.appendChild(backgroundPopUp);
+    backgroundPopUp.appendChild(innerDivContent);
+    innerDivContent.appendChild(winExplanation);
+    innerDivContent.appendChild(button);
+})
 
+/**
+ * When the user click on the close button
+ * The parent element is remove, and the app it self is now usable
+ */
 button.addEventListener('click', () => {
     backgroundPopUp.remove();
 })
