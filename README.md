@@ -13,7 +13,7 @@ directly choosem by them, simply spinning a wheel.
 
 ---
 
-##This app is form by 4 pages
+## This app is form by 4 pages
 
 | N     | Name  | Feature                 |
 |:------|:-----:|------------------------:|
@@ -25,7 +25,7 @@ directly choosem by them, simply spinning a wheel.
 
 ---
 
-##Sample live user experience inside the app
+## Sample live user experience inside the app
 
 > General view
 >> ![image](https://github.com/MiguelJRM95/wheel_of_fortune/blob/master/media/general.gif)
@@ -35,3 +35,10 @@ directly choosem by them, simply spinning a wheel.
 
 > Wheel feature
 >> ![image](https://github.com/MiguelJRM95/wheel_of_fortune/blob/master/media/wheel.gif)
+
+---
+
+### WARNING ⚠️⚠️⚠️⚠️
+
+The wheel feature has only been tested in 1080x900 resolution
+at a 19inch laptop and at a 24inch monitor
