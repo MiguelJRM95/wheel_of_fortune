@@ -39,8 +39,8 @@ nav{
 
 /*
     layout and styles for the main section
-    of the index.html page
-    here are all of the random quotes styles
+    at the index.html page
+    here are all of the random quotes styles as well
 */
 .main{
     display: flex;
@@ -80,6 +80,7 @@ nav{
 }
 
 /*
+    The layout and styles of the main tag at win.html are at wheel.css
     Styles and layout of the left main components in the win.html page
     Prize to select by the user, table of last prizes and winner text below the table
     For the wheel styles go to wheel.css

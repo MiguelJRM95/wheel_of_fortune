@@ -1,3 +1,8 @@
+/*
+    Variables for the standards heights
+    of the main components
+	In this case only used for calculate the height of the main tag section
+*/
 :root{
     --header-h: 9vh;
     --nav-h: 5.5vh;
@@ -13,6 +18,9 @@ main{
     grid-template-rows:  1fr;
 }
 
+/*
+	Styles and layout for the wheel background
+*/
 .wheel-wrapper{
 	height: 100%;
     grid-column: 1;
@@ -28,6 +36,13 @@ main{
 	overflow:hidden;
 }
 
+/*
+	Container for all the pieces of the wheel
+	The circle that contains all
+	This element is the ones that rotates when the user press the spin button
+	You can see the funcionality at wheel-spin.js
+*/
+
 .wheel-container{
 	width:27em;
 	height:27em;
@@ -38,6 +53,12 @@ main{
 	overflow: hidden;
 	transition: 5s;
 }
+
+
+/*
+	Layout and styles for all of the 8 pieces of the wheel
+	Each container have a class with a number in letter for the color
+*/
 
 .wheel-container div{
 	height:50%;
@@ -55,27 +76,6 @@ main{
 	font-family:sans-serif;
 	color:#fff;
 	left:5em;
-}
-
-.wheel-text{
-    transform: rotate(-90deg);
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-    font-size: medium;
-}
-
-.wheel-text-small{
-	transform: rotate(-90deg);
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-    font-size: smaller;
-	max-width: 75%;
 }
 
 .wheel-container .one{
@@ -118,6 +118,41 @@ main{
 	transform: rotate(315deg);
 }
 
+/*
+	Rotation fot the text inside the pieces of the wheel
+*/
+
+.wheel-text{
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    font-size: medium;
+}
+
+/*
+	Same as above but for large text to fit inside the piece
+*/
+
+.wheel-text-small{
+	transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    font-size: smaller;
+	max-width: 75%;
+}
+
+
+/*
+	Layout and styling for the spin button
+	Here is the arrow as well #spin::before
+*/
+
 #spin {
 	width: 68px;
     height: 68px;
@@ -133,7 +168,7 @@ main{
     user-select: none;
 }
 
-#spin:after {
+#spin::after {
 	content: 'SPIN';
 	text-align: center;
 	line-height: 68px;
@@ -146,7 +181,7 @@ main{
 	display: block;
 }
 
-#spin:before {
+#spin::before {
 	content: '';
 	position: absolute;
 	width: 0;
