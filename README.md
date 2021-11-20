@@ -13,7 +13,7 @@ directly choosem by them, simply spinning a wheel.
 
 ---
 
-This app is form by 4 pages
+##This app is form by 4 pages
 
 | N     | Name  | Feature                 |
 |:------|:-----:|------------------------:|
@@ -25,7 +25,7 @@ This app is form by 4 pages
 
 ---
 
-Sample live user experience inside the app
+##Sample live user experience inside the app
 
 > General view
 >> ![image](https://github.com/MiguelJRM95/wheel_of_fortune/blob/master/media/general.gif)
