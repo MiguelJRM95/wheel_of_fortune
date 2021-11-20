@@ -19,5 +19,5 @@ This app is form by 4 pages
 |:------|:-----:|------------------------:|
 |1      |index  | Show a random quote     |
 |2      |win    | Be able to spin a wheel |
-|1      |about  | Client review and vision|
-|1      |contact| Send emails to the staff|
+|3      |about  | Client review and vision|
+|4      |contact| Send emails to the staff|
