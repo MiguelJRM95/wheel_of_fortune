@@ -1,4 +1,4 @@
-Title: Contact page
+Title: About Us page
 As a: Final User
 I want: To read some reviews of the coach service. Although to view the vision of the company and what the motivation behind
         this business.
