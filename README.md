@@ -44,6 +44,7 @@ The wheel feature has only been tested in 1080x900 resolution
 at a 19inch laptop and at a 24inch monitor
 
 ---
+## Run the app
 
 In order to run the app in your local machine, you must to install Nodejs at least v16.13.0
 Inside the proyect folder
@@ -51,7 +52,6 @@ Inside the proyect folder
 ````
 cd /src
 node app.js
-
 ````
 
 or if you want to edit something
@@ -59,5 +59,4 @@ or if you want to edit something
 ````
 cd /src
 npm run dev
-
 ````
