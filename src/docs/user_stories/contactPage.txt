@@ -1,0 +1,5 @@
+Title: Contact page
+As a: Final User
+I want: To read some reviews of the coach service. Although to view the vision of the company and what the motivation behind
+        this business.
+So that: I'm able to decide if I want to use this service or not, as well know If I like the vision of the company.
