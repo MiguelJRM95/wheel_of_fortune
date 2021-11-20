@@ -1,3 +1,15 @@
+/*
+    REMINDER!!
+    Most of the styling is from Bootstrap
+    win.html, index.html, about.html use v4.5.3
+    contact.html uses v5.0.2
+*/
+
+
+/*
+    Variables for the standards heights
+    of the main components
+*/
 :root{
     --header-h: 9vh;
     --nav-h: 80px;
@@ -5,6 +17,10 @@
     --main-h: 85vh;
 }
 
+/*
+    Styles and layout for the header and nav
+    the same all over the app
+*/
 .padding-l-r{
     padding: 0 10vw;
 }
@@ -21,6 +37,11 @@ nav{
     box-shadow: 3px 25px 42px -10px rgba(110,110,110,0.79);
 }
 
+/*
+    layout and styles for the main section
+    of the index.html page
+    here are all of the random quotes styles
+*/
 .main{
     display: flex;
     align-items: center;
@@ -57,6 +78,12 @@ nav{
     margin: auto auto;
     text-align: center;
 }
+
+/*
+    Styles and layout of the left main components in the win.html page
+    Prize to select by the user, table of last prizes and winner text below the table
+    For the wheel styles go to wheel.css
+*/
 
 .prize-info{
     min-width: 50vw;
@@ -97,10 +124,15 @@ nav{
 }
 
 #winner{
-    
     text-align: center;
     font-weight: bold;
 }
+
+
+/*
+    Styles and layout of the footer for all pages
+    include the social media icons
+*/
 
 footer{
     position: fixed;
@@ -125,6 +157,10 @@ i:hover{
 i:active{
     text-shadow: 2px 1px black;
 }
+
+/*
+    Styles and layout for the about.html page
+*/
 
 svg{
     position: fixed;
@@ -220,6 +256,11 @@ svg{
     float: left;
     margin-right: 0.5em;
 }
+
+/*
+    Styles and layout of the main section of the contact.html page
+    the main section have the .content class
+*/
 
 .content{
     display: flex;
