@@ -32,7 +32,8 @@ winExplanation.style.width = "70%";
 winExplanation.style.margin = "0 auto";
 winExplanation.innerText = `Hi, Visitor! This is our Wheel Of Fortune, you have three free spins,
                             but remember, you first need to select a prize of your choise, Good Luck!
-
+                            To play you only need to prees the spin button in the middle of the wheel,
+                            the more times you press, the more speed you give the wheel.
                             
                                                                 👇`;
 
