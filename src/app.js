@@ -109,5 +109,5 @@ app.post('/email', async (req, res) => {
 
 //Logging to remind the port the app is listening
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
+  console.log(`Newfordneurcoach app listening at http://localhost:${port}`);
 })
