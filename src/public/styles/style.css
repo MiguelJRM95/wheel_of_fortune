@@ -2,7 +2,7 @@
     --header-h: 9vh;
     --nav-h: 80px;
     --footer-h: 7vh;
-    --main-h: 86.78461vh;
+    --main-h: 85vh;
 }
 
 .padding-l-r{
@@ -137,8 +137,13 @@ svg{
     z-index: -1;
 }
 
+.about-main{
+    height: var(--main-h);
+    display: flex;
+    align-items: center;
+}
+
 .container{
-    margin-top: 5em;
     display: grid;
     grid-template-columns: 2fr 1fr;   
 }
@@ -175,23 +180,24 @@ svg{
 
 .people-card{
     width: 25vw;
-    height: 120px;
+    height: fit-content;
     background-color: #fff;
     border-radius: 10px;
     -webkit-box-shadow: 14px 14px 14px -9px rgba(125,118,125,0.67);
     -moz-box-shadow: 14px 14px 14px -9px rgba(125,118,125,0.67);
     box-shadow: 14px 14px 14px -9px rgba(125,118,125,0.67);
+    overflow: hidden;
 }
 
-.people-card p{
-    line-height: normal;
-    padding-top: 1em;
+.people-card > p{
+    margin: 20px;
+    overflow: auto;
 }
 
 .img-1{
     background: url("https://source.unsplash.com/collection/1116190/120x120");
     width: 120px;
-    height: 120px;
+    height: 16vh;
     border-radius: 10px 0 0 10px;
     float: left;
     margin-right: 0.5em;
@@ -200,7 +206,7 @@ svg{
 .img-2{
     background: url("https://source.unsplash.com/collection/10604986/120x120");
     width: 120px;
-    height: 120px;
+    height: 16vh;
     border-radius: 10px 0 0 10px;
     float: left;
     margin-right: 0.5em;
@@ -209,7 +215,7 @@ svg{
 .img-3{
     background: url("https://source.unsplash.com/collection/fR0fpuI7fzc/120x120");
     width: 120px;
-    height: 120px;
+    height: 20vh;
     border-radius: 10px 0 0 10px;
     float: left;
     margin-right: 0.5em;
