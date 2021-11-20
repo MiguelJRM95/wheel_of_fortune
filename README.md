@@ -21,3 +21,8 @@ This app is form by 4 pages
 |2      |win    | Be able to spin a wheel |
 |3      |about  | Client review and vision|
 |4      |contact| Send emails to the staff|
+
+
+---
+
+Sample live user experience inside the app

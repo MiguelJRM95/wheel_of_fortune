@@ -28,7 +28,7 @@ const textToShow = () => {
 
                                                     We are here to help you so!`;
         default:
-            return route;
+            console.log(route);
             break;
     }
 }
