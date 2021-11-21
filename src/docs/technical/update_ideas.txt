@@ -1,1 +1,5 @@
 1. Login system
+2. Wheel with only images not divs
+3. Real mail server
+4. Use a data base host in server of our own
+5. Real time chat with the choaches
