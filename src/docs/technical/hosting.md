@@ -1,4 +1,4 @@
-# Host depends on user requests per minute
+# Hosting depending on user requests per minute
 ---
 
 Well for this task since the app is quite simple, we only will needed to focus on the requests,
@@ -17,6 +17,6 @@ This load balancer server will use
 
  - apache JMeter to test the load balancer configuration and know how the nodes will handle the amount of requests
 
-A general overview of the set up would be like this:
+### A general overview of the set up would be like this:
 
 > ![Network](https://github.com/MiguelJRM95/wheel_of_fortune/blob/master/media/host.png)
