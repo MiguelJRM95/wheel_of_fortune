@@ -7,9 +7,11 @@ that host the app.
 
 This require that the load balancer server and the server nodes to be in the same network or 
 the load balancer be capable of reach the network of the nodes for example adding the nodes network
-to the load balancer route table
+to the load balancer route table.
 
-This load balancer server will use
+But for this laboratory the load balancer and the nodes will be in the same network for simplicity.
+
+This load balancer server will use:
  - apache httpd service 
     - the mod_proxy 
     - mod_proxy_http (since the servers would only recieve http requests from the users)
