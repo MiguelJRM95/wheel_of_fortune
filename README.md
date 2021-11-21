@@ -9,7 +9,7 @@ so each customer have a personal treatment.
 Here comes the fun part❕ 🤯🎉
 
 Newfordneurcoach will let the user take the chance of winning a prize one of them
-directly choosem by them, simply spinning a wheel.
+directly choosen by them, simply spinning a wheel.
 
 ---
 
