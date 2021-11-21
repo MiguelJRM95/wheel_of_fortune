@@ -213,6 +213,7 @@ svg{
 
 .people{
     display: grid;
+    gap: 0.6em;
 }
 
 .people-card{
