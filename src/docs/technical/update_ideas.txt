@@ -3,3 +3,52 @@
 3. Real mail server
 4. Use a data base host in server of our own
 5. Real time chat with the choaches
+
+------
+As the main idea for the app is send mails to the choach
+the first logical step is to setup the app with a real mail server
+one option is to create your own mail server based on a ubuntu server distro
+in order to take advantage of the network create for hosting the app
+or go for a simple option as hire a mail host server.
+
+In both cases we need to take care of the configuration of nodemailer inside the app.js
+
+------
+One of the most necessary updates is to refactor the way the wheel is build, for the moment
+it in CSS and because of this is hard to make an straight forward approach to now what prize the 
+user wins. A better option will be desing each pieze of the wheel in photoshop or any similar tool
+and then just use a little of CSS to place it in the viewport.
+
+So this way is simplier to know where the prize won by the user is.
+
+
+------
+Other must of the app is make the wheel working in small screen devices
+well using media queries for each size of screen with the actual version or
+by the refactor mentioned above that will be much better solution.
+
+------
+Migrate the quotes now storage in a faunadb database to a database in a server,
+this will seem a little tedius but not so difficult since the only requirements
+is to decide the database to use (noSQL or SQL will be both fine for this), then set up
+the database with all the quotes, and then change the function called at app.js when a get
+http request is sended to /quotes.
+
+
+------
+This previous migration will be so helpful with the login system and the real time chat
+with the coaches, as this all information must be storage, to implement both funcionalities
+include the sign up.
+
+
+------
+One of the aspects that is necessary to refactor is the random quotes feature
+as for the moment is in the same app, if you look at the random_quotes.js file 
+there is a const called url wich contains the absolute route to fetch the quotes,
+but the problem is if the domain name changes or the port, this file have to be manually 
+modified.
+
+Maybe separate this kind of random quotes API (just a get request that call a select in a database)
+will be a better option so the url to the quotes is independent from the app.js file.
+
+
