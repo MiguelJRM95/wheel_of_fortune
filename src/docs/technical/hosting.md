@@ -19,4 +19,4 @@ This load balancer server will use
 
 A general overview of the set up would be like this:
 
-> ![Network](http://github.com/MiguelJRM95/wheel_of_fortune/blob/master/media/host.png)
+> ![Network](https://github.com/MiguelJRM95/wheel_of_fortune/blob/master/media/host.png)
