@@ -1,0 +1,11 @@
+Nodejs:
+    ^16.13.0
+    
+    -Packages:
+        "express": "^4.17.1"
+        "faunadb": "^4.4.1"
+        "nodemailer": "^6.7.1"
+        "nodemon": "^2.0.15"
+
+This are the minimum version to use in the project
+If any dependency or technology is added to it, please write it down here.
