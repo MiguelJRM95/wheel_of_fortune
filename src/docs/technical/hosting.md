@@ -147,9 +147,24 @@ Our apache server will listen in port 80, the default port
 
    ````
 
-> Knowing this we can calculet aproximatly the maximum amount of concurrent conexions supported for each user by our worker
+> Knowing this we can calculate aproximatly the maximum amount of concurrent conexions supported for each user by our worker
 RAM concurrence = (total RAM - RAM uses by the system)/ RAM per user
    - We need to remember that a user could by consuming more than one request for the service
 
 
 Documentation used:
+[Apache Module mod_proxy](https://httpd.apache.org/docs/2.4/mod/mod_proxy.html)
+[Apache Module mod_proxy_balancer](https://httpd.apache.org/docs/2.4/mod/mod_proxy_balancer.html)
+[Apache Module mod_lbmethod_byrequests](https://httpd.apache.org/docs/2.4/mod/mod_lbmethod_byrequests.html)
+[Apache Reverse Proxy Guide](https://httpd.apache.org/docs/2.4/howto/reverse_proxy.html)
+[inmotion](https://www.inmotionhosting.com/support/server/apache/apache-load-balancer/)
+[Ubuntu netplan](https://mytcpip.com/netplan-ubuntu/)
+[Calculate Concurrency](https://www.elconspirador.com/2019/01/13/concurrencia-maxima-de-un-servidor-apache2-gnu-linux/)
+[jMeter guide](https://www.guru99.com/guide-to-install-jmeter.html)
+[jMeter remote testing](https://jmeter.apache.org/usermanual/remote-test.html)
+[jMeter cli mode](https://blog.e-zest.com/how-to-run-jmeter-in-non-gui-mode/)
+[jMeter why cli mode](https://community.esri.com/t5/implementing-arcgis-blog/running-an-apache-jmeter-load-test-from-command/ba-p/1065720)
+[jMeter Load Testing](https://www.digitalocean.com/community/tutorials/how-to-use-apache-jmeter-to-perform-load-testing-on-a-web-server)
+[jMeter test plan elements](https://jmeter.apache.org/usermanual/test_plan.html)
+[jMeter create cli test](https://www.blazemeter.com/blog/how-to-create=non-gui-jmeter-tests-with-jmeter-classes)
+[Apache as a reverse proxy and load balancer](https://www.youtube.com/watch?v=col3QKMikhI&t=1381s)
