@@ -135,8 +135,11 @@ Our apache server will listen in port 80, the default port
 > We can made a simple script that runs the node app when the system start
 > Finally we can calculate the RAM resouces use in each worker
 
+   ``
    # RAM that a apache request by a user use
    ps -ylC node –sort:rss | awk ‘{SUM += $8; I += 1} END {print SUM/I/1024}’
+
+   ``
 
    # RAM of the rest of the service use
    ps -N -ylC node –sort:rss | awk ‘{SUM += $8} END {print SUM/1024}’
