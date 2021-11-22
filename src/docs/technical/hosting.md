@@ -38,7 +38,7 @@ This load balancer server will use:
    - mod_lbmethod_byrequests
    > For that, the file **httpd.conf** need to have that lines uncommented:
 
-      ````
+      
          ...
          LoadModule lbmethod_byrequests_module modules/mod_lbmethod_byrequests.so
          ...
@@ -53,14 +53,14 @@ This load balancer server will use:
          #LoadModule proxy_html_module modules/mod_proxy_html.so
          LoadModule proxy_http_module modules/mod_proxy_http.so
          ...
-      ````
+      
 
 - We also can check that this modules are enable:
 
-      `````
+      
       httpd -M | grep proxy
       httpd -M | grep quequests
-      ````
+      
 
 - In some cases the firewall could refuse or block connection, for avoid that we could type:
 
