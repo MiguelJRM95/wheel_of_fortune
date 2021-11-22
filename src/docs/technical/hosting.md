@@ -78,7 +78,7 @@ Our apache server will listen in port 80, the default port
          ProxyRequests Off 
 
          # Enable web GUI to monitor how the load balancing is working
-         <Location /balance-manager>
+         <Location /balancer-manager>
             SetHandler balancer-manager
             # Whit this directive you set who have access to the manager, it's also recomended for security reasons to config the IP that will have access to this manager
             Require host localhost
@@ -94,14 +94,16 @@ Our apache server will listen in port 80, the default port
             BalancerMember http://<DNS/IP>:<PORT>
             BalancerMember http://<DNS/IP>:<PORT>
             BalancerMember http://<DNS/IP>:<PORT>
+            # We also can set the preference of the workers with the attribute loadfactor
+            # And setting up backup workers with the attribute lbset=X where X is a number, and the lowest this number is, the earliest that worker will be required
             ....
             ProxySet lbmethod=byrequests
          </Proxy>
 
          # So we can connect to the balance manager
-         ProxyPass /balance-manager !
+         ProxyPass /balancer-manager !
 
-         # will aloud request to the app home that it's running on each worker for example http://10.0.1.1:3000/ for worker 1
+         # will aloud request to the app home that it's running on each worker for example http://10.0.1.2:3000/ for worker 1
          ProxyPass / balancer://master-balancer
          ProxyPassReverse / balancer://master-balancer
 
@@ -118,4 +120,30 @@ Our apache server will listen in port 80, the default port
 
       systemctl status httpd
       
-   
+- Now before open the network to the internet we will run the test with JMeter, to know how our workers will perform. Inside
+   jMeter folder are the test for the three scenarios. To run a test simply go to the bin folder inside the jmeter instalation and type:
+
+    jmeter -n –t test.jmx -l testresults.jtl
+
+    > You need first to edit the test file to modify the IP of the balancer-master
+    > [jMeter](../jMeter/)
+
+
+## Workers Configuration
+
+> Our workers only need to have Nodejs installed and the node app
+> We can made a simple script that runs the node app when the system start
+> Finally we can calculate the RAM resouces use in each worker
+
+   # RAM that a apache request by a user use
+   ps -ylC node –sort:rss | awk ‘{SUM += $8; I += 1} END {print SUM/I/1024}’
+
+   # RAM of the rest of the service use
+   ps -N -ylC node –sort:rss | awk ‘{SUM += $8} END {print SUM/1024}’
+
+> Knowing this we can calculet aproximatly the maximum amount of concurrent conexions supported for each user by our worker
+RAM concurrence = (total RAM - RAM uses by the system)/ RAM per user
+   - We need to remember that a user could by consuming more than one request for the service
+
+
+Documentation used:
