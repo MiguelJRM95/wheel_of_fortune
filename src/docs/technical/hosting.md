@@ -114,8 +114,8 @@ Our apache server will listen in port 80, the default port
       ````
 
    > We can check now the state of the service 
-   
-      ````
+
+      
       systemctl status httpd
-      ````
+      
    
