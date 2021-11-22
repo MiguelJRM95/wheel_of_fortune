@@ -37,6 +37,7 @@ This load balancer server will use:
    - mod_proxy_http
    - mod_lbmethod_byrequests
    > For that, the file **httpd.conf** need to have that lines uncommented:
+
       ````
          ...
          LoadModule lbmethod_byrequests_module modules/mod_lbmethod_byrequests.so
@@ -53,18 +54,24 @@ This load balancer server will use:
          LoadModule proxy_http_module modules/mod_proxy_http.so
          ...
       ````
+
 - We also can check that this modules are enable:
+
       `````
       httpd -M | grep proxy
       httpd -M | grep quequests
       ````
+
 - In some cases the firewall could refuse or block connection, for avoid that we could type:
+
       ````
       firewall-cmd --permanent --add-service=http
       firewall-cmd reload
       ````
+
 - Now we need to create a vhost config file, this will contain the directives to send the users requests to the nodes,
 Our apache server will listen in port 80, the default port
+
       ````
       <VirtualHost *:80>
          # This directive is off by default, and is a good practise to keep it off for security reasons
@@ -101,10 +108,13 @@ Our apache server will listen in port 80, the default port
       </VirtualHost>
       ````
    > Now we need to restart the httpd service
+
       ````
       systemctl restart httpd
       ````
+
    > We can check now the state of the service 
+   
       ````
       systemctl status httpd
       ````
