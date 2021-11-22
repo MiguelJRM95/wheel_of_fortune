@@ -136,13 +136,16 @@ Our apache server will listen in port 80, the default port
 > Finally we can calculate the RAM resouces use in each worker
 
    ````
-   # RAM that a apache request by a user use
+   # RAM that a apache request by a user demand
    ps -ylC node –sort:rss | awk ‘{SUM += $8; I += 1} END {print SUM/I/1024}’
 
    ````
 
-   # RAM of the rest of the service use
+   ````
+   # RAM of the rest of the service demmand
    ps -N -ylC node –sort:rss | awk ‘{SUM += $8} END {print SUM/1024}’
+
+   ````
 
 > Knowing this we can calculet aproximatly the maximum amount of concurrent conexions supported for each user by our worker
 RAM concurrence = (total RAM - RAM uses by the system)/ RAM per user
