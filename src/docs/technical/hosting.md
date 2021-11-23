@@ -5,6 +5,8 @@ Well for this task since the app is quite simple, we only will needed to focus o
 for this topic, I will use a load balancer server as a gateway between the users and the servers
 that host the app.
 
+I will be implementing the load balancer with Apache server, and some of it's modules.
+
 This require that the load balancer server and the server nodes to be in the same network or 
 the load balancer be capable of reach the network of the nodes for example adding the nodes network
 to the load balancer route table.
@@ -36,7 +38,7 @@ This load balancer server will use:
    - the mod_proxy 
    - mod_proxy_http
    - mod_lbmethod_byrequests
-   > For that, the file **httpd.conf** need to have that lines uncommented:
+   > For that, the file **apache2.conf** need to have that lines uncommented:
 
       
          ...
