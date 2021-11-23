@@ -28,7 +28,7 @@ This load balancer server will use:
 
 ### General Configuration
 
-- Both Load Balancer server and Nodes will be running Ubuntu Server 24.04
+- Both Load Balancer server and Nodes will be running Ubuntu Server 20.04
 - All the Nodes will have instaled Nodejs version 16.13.0
 - As mentioned before all will be in the same network
 
