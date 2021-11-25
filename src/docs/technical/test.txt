@@ -1,1 +1,3 @@
-Overview:
+#UNIT TESTING Jest (wheel-spin.js, app,js, table_control.js)
+
+#END TO END Cypress.io (Wheel funcionality)
