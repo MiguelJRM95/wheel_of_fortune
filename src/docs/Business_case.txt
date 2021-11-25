@@ -1,6 +1,21 @@
-The field that I'm going to choose for develop my app is coaching
-both personal and profesional coaching.
+The field that I decided to choose for develop my app is coaching
+both life and profesional coaching.
 
 I find this area of business is growing quite a lot lately, so I think
 it's a good business.
 
+Summary of Life Coaching Statistics:
+    71,000 life coaches based in 161 countries worldwide
+    In 2018 there were 53,300 coaches
+    Life coaching is the second fastest growing industry
+    23,300 coaching practitioners in North America
+    The percentage change in total revenue for coaches between 2015-2019 was 36%
+    The estimated global revenue from coaching in 2019 was $2.849 billion
+    The coaching industry has a $1 billion value
+
+The life coaching field has increase a lot it's impact in the market, as the number of people wanting to be coached just keeps increasing. Coaches have become a commodity in our modern world, the demand for every type of life coach has literally skyrocketed. 
+
+So this app comes to help that amount of people that want to be coached and need help, and also make this task easy connecting on
+a direct way trhougth the email, and in a future update via real time chat.
+
+An app like this can be the door for a lot of freelancer coaches that want the commodity just to log in and talk with their clients.
